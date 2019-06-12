@@ -10,6 +10,8 @@ import { CartComponent } from './cart/cart.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,10 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCr8j0ZJdzGMHC_WK-8jojosvkQmOmyyxU'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

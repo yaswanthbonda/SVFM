@@ -11,5 +11,16 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  latitude = 16.948176;
+  longitude = 82.233675;
+  locationChosen = false;
+
+  onChoseLocation(event){
+    // console.log(event);
+    this.latitude = event.coords.lat;
+    this.longitude = event.coords.lon;
+    this.locationChosen = true;
+  }
 
 }

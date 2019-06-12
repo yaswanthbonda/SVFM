@@ -1,0 +1,22 @@
+.center {
+    text-align: center;
+    border: 3px solid rgb(184, 98, 184);
+  }
+  .itemHeader {
+    text-align: center;
+    border: 3px solid rgb(184, 98, 184);
+  }
+  .logos {
+    text-align: center !important;
+    width: 100px;
+    height: 100px;
+  }
+  .imageHeader {
+    text-align: center !important;
+    width: 100px;
+    height: 100px;
+  }
+agm-map{
+    height: 500px;
+    width: 500px;
+}

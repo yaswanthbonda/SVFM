@@ -1,5 +1,14 @@
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
 <div class="container">
-You can contact us via:
+  <h2 class="center">
+    We love
+    <i class="glyphicon glyphicon-heart" style="color:red;"></i>
+    to help our customers.
+  </h2>
+
+  <h3>You can always get in touch with us via:</h3>
+
   <ol>
     <li>
       Phone: +91 9849507223
@@ -7,5 +16,120 @@ You can contact us via:
     <li>
       email: yaswanthbonda@gmail.com
     </li>
+    <li>
+      Facebook: yaswanthbonda
+    </li>
+    <li>
+      Instagram: yaswanthbonda
+    </li>
   </ol>
+
+  <table>
+    <caption>
+      Contact Us
+    </caption>
+    <tr>
+      <th>
+        <img
+          src="../../assets/images/callLogo.png"
+          alt="Call Logo"
+          class="logos"
+        />
+      </th>
+      <th class="imageHeader">
+        <img
+          src="../../assets/images/gmailLogo.png"
+          alt="Call Logo"
+          class="logos"
+        />
+      </th>
+      <th>
+        <img
+          src="../../assets/images/instagramLogo.png"
+          alt="Instagram Logo"
+          class="logos"
+        />
+      </th>
+      <th>
+        <img
+          src="../../assets/images/fbLogo.png"
+          alt="Facebook Logo"
+          class="logos"
+        />
+      </th>
+    </tr>
+    <tr>
+      <th class="itemHeader">Mobile</th>
+      <th class="itemHeader">eMail</th>
+      <th class="itemHeader">Instagram</th>
+      <th class="itemHeader">Facebook</th>
+    </tr>
+    <tr>
+      <td>+91 9849507223</td>
+      <td>yaswanthbonda@gmail.com</td>
+      <td>yaswanth bonda</td>
+      <td>yaswanth bonda</td>
+    </tr>
+  </table>
+
+  <h3>You can always visit us at:</h3>
+  <h4>
+    Sri Venkateswara Fancy Mart, Dr.no#33-1-53, Glass House Center, Main Road,
+    Kakinada, E.G.DT, Andhra Pradesh, India. Pin Code: 533001
+  </h4>
+
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr8j0ZJdzGMHC_WK-8jojosvkQmOmyyxU&callback=initMap"
+    type="text/javascript"
+  ></script>
+  <agm-map
+    [latitude]="latitude"
+    [longitude]="longitude"
+    (mapClick)="onChoseLocation($event)"
+  >
+    <agm-marker
+      [latitude]="latitude"
+      [longitude]="longitude"
+      *ngIf="locationChosen"
+    ></agm-marker>
+  </agm-map>
+
+  <table>
+    <tr>
+      <th>
+        <table style="border-width: 5px; border-style: blue">
+          <tr>
+            <th>
+              <img
+                src="../../assets/images/callLogo.png"
+                alt="Call Logo"
+                class="logos"
+              />
+            </th>
+          </tr>
+          <tr>
+            <th class="itemHeader">Mobile</th>
+          </tr>
+        </table>
+      </th>
+      <th>
+        <table>
+          <tr>
+            <th>
+              <img
+                src="../../assets/images/gmailLogo.png"
+                alt="Call Logo"
+                class="logos"
+              />
+            </th>
+          </tr>
+          <tr>
+            <th class="itemHeader">Mobile</th>
+          </tr>
+        </table>
+      </th>
+    </tr>
+  </table>
 </div>
