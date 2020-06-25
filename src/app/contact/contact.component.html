@@ -78,7 +78,7 @@
     Kakinada, E.G.DT, Andhra Pradesh, India. Pin Code: 533001
   </h4>
 
-  <script
+  <!-- <script
     async
     defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr8j0ZJdzGMHC_WK-8jojosvkQmOmyyxU&callback=initMap"
@@ -94,7 +94,7 @@
       [longitude]="longitude"
       *ngIf="locationChosen"
     ></agm-marker>
-  </agm-map>
+  </agm-map> -->
 
   <table>
     <tr>
@@ -132,4 +132,23 @@
       </th>
     </tr>
   </table>
+</div>
+
+<h3>Irrelevant to this page: Assignment 2 of Angular course</h3>
+<label>Name</label>
+<input type=text class="form-control" [(ngModel)]="name">
+<p>{{name}}</p>
+<button class="btn btn-primary" [disabled]="name ===''"
+(click)="name = ''">Reset Name</button>
+
+
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="h2">
+        I'm Working!
+      </div>
+    </div>
+  </div>
 </div>
